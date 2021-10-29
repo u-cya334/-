@@ -1,0 +1,90 @@
+/* しりとりのCSS */
+#title{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#player{
+    text-align: center;
+    font-size: 30px;
+}
+
+#buttonbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#content{
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 30px;
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 600px;
+}
+
+.answer{
+    position: relative;
+    float:left;
+    border-width: 2px;         /*枠線の太さ*/
+    border-color:black;   /*枠線の色*/
+    background:white;  
+    color: black;
+    margin-left: 10%; 
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.answer:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 12px solid white;  /*三角の線になる部分*/
+    top: 10px;
+    left: -19px;
+}
+
+.playerAnswer{
+    position: relative;
+    text-align: right;
+    /* float:right; */
+    margin-top: 10%;
+    border-width: 2px;         /*枠線の太さ*/
+    border-color:black;   /*枠線の色*/
+    background:rgb(49, 255, 49);  
+    color: black;
+    margin: 0 0 0 auto;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.playerAnswer:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 15px solid rgb(49, 255, 49);
+    top: 10px;
+    right: -25px;
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.imgR{
+    position: relative;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 0%;
+}
+
+.box{
+    display: flex;
+    flex-wrap: column;
+}

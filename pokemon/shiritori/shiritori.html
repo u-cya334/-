@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンしりとり</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="title">ポケモンしりとり</h1><br>
+
+    <div id="player">
+        <input type="text" name="input" id="input">
+        <button type="button" id="send">キミに決めた！！</button><br>
+    </div>
+
+    <div id="buttonbox">
+        <button type="button" id="restart">はじめから</button>
+        <button type="button" id="surrender">降参する</button>
+    </div>
+    <div class='contents' id="content">
+        <!-- <div class="box"><div class="answer">これはテスト</div><img class="img" src="./img/i_0001.png" alt=""></div>
+        <div class="box"><div class="playerAnswer"><img class="imgR" src="./img/i_0001.png" alt="">これはテスト</div></div> -->
+
+        <div class="message"></div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="json.js"></script>
+    <script src="shiritori.js"></script>
+</body>
+</html>
