@@ -1,0 +1,30 @@
+#title{
+    position: relative;
+    /* margin-left: 50%;
+    transform-origin: center;
+    transform: translate(-50%,0); */
+    text-align: center;
+    white-space: nowrap;
+}
+
+#start{
+    position: relative;
+    margin-left: 50%;
+    transform-origin: center;
+    transform: translate(-70%,0) scale(150%,150%);
+    white-space: nowrap;
+}
+
+main{
+    position: relative;
+    margin-left: 5%;
+    transform-origin: center;
+    transform: translate(0,0);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    font-size: 10px;
+    text-align: center;
+}

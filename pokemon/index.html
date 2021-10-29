@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンしりとり</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">ポケモンしりとり</h1>
+        <a href="shiritori/shiritori.html"><button type="button" id="start">スタート</button></a>
+        
+    </header>
+    <main>
+        <hgroup>
+            <h1>あそびかた</h1><br>
+            <h2>しりとりのルール</h2>
+                <div>
+                    ルールは一般的なしりとりと同じルールです。<br>
+                    しりとりに使用できるポケモンは第八世代(ソード・シールド)までに登場した
+                    898種類のポケモンです。(DLC含む) <br><br>
+                    ポケモンの名前は全角カタカナで入力してください。それ以外だとポケモンと
+                    判定されないので注意してください。<br><br>
+                    最後の文字が特殊なポケモンは以下のような処理を行ないます。<br><br>
+                    ・濁点・半濁点はそのままつなげる<br>
+                    [例：カイオーガ→ガルーダ] <br><br>
+                    ・小文字は大文字として扱う<br>
+                    [例：サダイジャ→ヤミラミ] <br><br>
+                    ・長音は長音の前の文字でつなげる<br>
+                    [例：ドードー→ドードリオ] <br><br>
+                    ・ニドラン♂、ニドラン♀は「ス」でつなげる <br>
+                    [例：ニドラン♂→スボミー] <br><br>
+                    ・ポリゴン２は「ツ」でつなげる<br>
+                    [例：ポリゴン２→ツボツボ] <br><br>
+                    ・ポリゴンZは「ト」でつなげる <br>
+                    [例：ポリゴンZ→トドゼルガ] <br><br>
+                </div>
+            <h2>勝敗について</h2>
+                <div>
+                    勝敗は自動で判定されます。条件は以下の通りです。<br>
+                    ・プレイヤーが「ン」で終わるポケモンを答えた時。 <br>
+                    ・しりとりできるポケモンがのこっていないとき<br>
+                    ・降参ボタンを押したとき
+                </div>
+            <h2>点数について</h2>
+                <div>
+                    しりとりの回数や勝敗によってスコアが加算されていきます。<br>
+                    ハイスコアを目指してがんばろう！！
+                </div>
+        </hgroup>
+    </main>
+    <br><br><br>
+
+    <footer>
+        &copy;2021 ポケモンしりとり|成果物置き場<br>
+        ポケモン・ポケットモンスター・Pokemonは任天堂株式会社・<br>
+        株式会社クリーチャーズ・株式会社ゲームフリークの登録商標です。
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
