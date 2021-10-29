@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>成果物置き場</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="loading"></div>
+        <!-- <div id="loadingTxt">読み込み中....</div> -->
+        <marquee id="loadingTxt"  behavior="scroll" direction="right" scrolldelay="10" scrollamount="10">...読み込み中...</marquee>
+        <div class="container">
+            <header>
+                <div class="card mt-5">
+                    <!-- ランダム画像 -->
+                    <img src="" class="card-img" alt="" rel="preload" id=titlePic>
+                    <div class="card-img-overlay">
+                        <p class="badge bg-light text-dark" id="items">
+                            成果物置き場
+                        </p>
+                    </div>
+                </div>
+                
+                <nav class="navbar navbar-light bg-light fixed-top">
+                    <!-- タイトル -->
+                    <a class="navbar-brand" href="#" >成果物置き場</a>
+                    <!-- ハンバーガーメニュー -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- ナビゲーションメニュー -->
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">ホーム</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quiz\quiz.html">クイズ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="race\race.html">メンダコダービー</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pokemon/index.html">ポケモンしりとり</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </header>
+
+            <main>
+                <article>
+                    <header>
+                        <h1>作ったもの(javascript)</h1>
+                            <a class="items" href="race\race.html">メンダコダービー</a><br>
+                            <a class="items" href="pokemon\index.html">ポケモンしりとり</a><br>
+                            <a class="items" href="quiz\quiz.html">クイズ(未完)</a><br>
+                        <br><h1>作ったもの(Python)</h1>
+                            <a class="items" href="pythonItems\index.html">作ったもの一覧</a>
+                        <br><br>
+                        <h2>このサイトについて</h2>
+                            <div class="info">
+                                このサイトは製作者が思うがままに作ったものを適当においていくポートフォリオ的なものです。<br>
+                                作って欲しい物の要望、バグの報告待ってます。
+                            </div>
+
+                    </header>
+                </article>
+            </main>            
+        </div>
+
+        <footer>
+            <small>
+                @2021-10-9 
+            </small>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+        <script src=index.js></script>
+    </body>
+</html>

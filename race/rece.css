@@ -1,0 +1,124 @@
+#recetitle{
+    font-size: 60px;
+}
+
+.animbox {
+    background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+    border-radius: 5px;
+    max-width: 400px;
+    height: 250px;
+}
+
+#home{
+    position: fixed;
+    transform-origin: center;
+    transform: translate(-50%,0);
+    margin-left: 50%;
+    bottom: 20px;
+}
+
+#mendako0{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#mendako1{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#mendako2{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#mendako3{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+/* カーソルを合わせた時にアニメーション */
+#mendako0:hover{
+    animation: poyoyon2 1s;
+}
+#mendako1:hover{
+    animation: poyoyon2 1s;
+}
+#mendako2:hover{
+    animation: poyoyon2 1s;
+}
+#mendako3:hover{
+    animation: poyoyon2 1s;
+}
+
+#line{
+    position: relative;
+    top: 400px;
+}
+
+.total {
+    display: flex;
+}
+
+/* 勝利モーション */
+.animate{
+    animation:poyoyon 1s infinite;
+}
+/* 敗北モーション */
+.loseAnimate{
+    animation:lose 2s infinite;
+}
+
+@keyframes poyoyon {
+    0%  {
+        transform: scale(1.0, 1.0) translate(0, 0) ;
+    }
+    45% {
+        transform: scale(1.0, 1.0) translate(0px, -5px) ;
+    }
+    60% {
+        transform: scale(1.0, 1.0) translate(0, 0px);
+    }
+    80% {transform: scale(1.0, 1.0) translate(0px, -5px);
+    }
+    100% {
+        transform: scale(1.0, 1.0) translate(0, 0px);
+    }
+    0%, 100% {
+        opacity: 1;
+    }}
+
+@keyframes poyoyon2 {
+0%  {
+    transform: scale(1.0, 1.0) translate(0, 0) skew(2deg,2deg);
+}
+15% {
+    transform: scale(1.0, 1.0) translate(2px, -5px) skew(-3deg,4deg);
+}
+30% {
+    transform: scale(1.0, 1.0) translate(0, 0px) skew(-2deg,-2deg);
+}
+50% {transform: scale(1.0, 1.0) translate(-2px, -5px) skew(2deg,-3deg);
+}
+70% {
+    transform: scale(1.0, 1.0) translate(0, 0px);
+}
+100% {
+    transform: scale(1.0, 1.0) translate(0, 0);
+}
+0%, 100% {
+    opacity: 1;
+}
+}
+
+@keyframes lose{
+    0%{
+        transform: scale(1.0, 1.0);
+    }
+    90%{
+        transform: scale(1.2, 0.2) translate(0, 7px);
+    }
+}
